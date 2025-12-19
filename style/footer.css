@@ -1,0 +1,94 @@
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 35px 100px; /* reduced vertical padding */
+    background: rgba(0, 20, 40, 0.85);
+    border-top: 1px solid rgba(0, 225, 255, 0.3);
+    color: #00eaff;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px rgba(0, 225, 255, 0.8);
+    position: relative; /* ensures ::before positions correctly */
+    font-size: 14px; /* optional: slightly smaller text */
+}
+/* Grid Layout */
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+/* Section Titles */
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Pink underline like the example */
+.footer-section h3::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #6a0654; /* pink highlight */
+    position: absolute;
+    left: 110px;
+    bottom: -5px;
+    border-radius: 3px;
+    
+}
+
+/* Footer Links */
+.footer-section a {
+    display: block;
+    margin: 8px 0;
+    font-size: 14px;
+    color: #bdbdbd;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #ffffff;
+    padding-left: 5px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.social-icons i {
+    font-size: 18px;
+    color: #bdbdbd;
+    background: #2e2e2e;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.social-icons i:hover {
+   background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* Copyright */
+.footer-copy {
+    text-align: center;
+    margin-top: 30px;
+    color: #909090;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+}
+
+
